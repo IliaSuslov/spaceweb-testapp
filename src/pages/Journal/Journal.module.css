@@ -1,0 +1,35 @@
+.container {
+  box-shadow: 1px 1px 8px 3px lightslategray;
+  border-radius: 3px;
+  width: 100%;
+}
+.h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 20px;
+}
+.h1 {
+  text-transform: uppercase;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ul {
+  text-decoration: none;
+  list-style: none;
+}
+.li {
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px rgba(68, 66, 66, 0.082) solid;
+  margin-right: 2%;
+}
+.licon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.icon {
+  color: royalblue;
+}
