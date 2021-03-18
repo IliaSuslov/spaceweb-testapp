@@ -29,7 +29,7 @@ function App() {
               <Route path='/account'>
                 <Account />
               </Route>
-              <Route path='/journal'>
+              <Route path='/journal' >
                 <Journal />
               </Route>
               <Route path='/domains' >

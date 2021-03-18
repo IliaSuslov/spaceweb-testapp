@@ -33,7 +33,13 @@ export default function Journal() {
                 <ul className={styles.ul}>
                   {v.item.map((list, i) => {
                     return (
-                      <li key={`list-${i}`} className={styles.li}>
+                      <li
+                        key={`list-${i}`}
+                        className={styles.li}
+                        onClick={() => {
+                          active ? setActive(i) : setActive(-1);
+                        }}
+                      >
                         {list.title}
                         <div className={styles.licon}>
                           {active !== i ? (
