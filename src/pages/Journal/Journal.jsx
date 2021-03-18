@@ -6,6 +6,7 @@ import styles from "./Journal.module.css";
 
 export default function Journal() {
   const [active, setActive] = useState(-1);
+  console.log(active);
   const [data, setData] = useState({});
   const getData = async () => {
     const url = "https://sweb.ru/export/turbojournal/";
@@ -37,7 +38,7 @@ export default function Journal() {
                         key={`list-${i}`}
                         className={styles.li}
                         onClick={() => {
-                          active ? setActive(i) : setActive(-1);
+                          active !== i ? setActive(i) : setActive(-1);
                         }}
                       >
                         {list.title}
